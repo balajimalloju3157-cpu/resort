@@ -1,0 +1,432 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f8f6;
+  color: #24332d;
+}
+
+/* NAVBAR */
+
+.navbar {
+  height: 70px;
+  padding: 0 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  box-shadow: 0 3px 18px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #176b52;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #34443d;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #15956d;
+}
+
+/* HOME HERO */
+
+.hero-section {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  padding: 80px 8%;
+
+  background:
+    linear-gradient(
+      rgba(0, 55, 43, 0.55),
+      rgba(0, 55, 43, 0.55)
+    ),
+    url("https://images.unsplash.com/photo-1540541338287-41700207dee6?auto=format&fit=crop&w=1800&q=85")
+    center/cover;
+}
+
+.hero-content {
+  max-width: 650px;
+  color: white;
+}
+
+.hero-small {
+  letter-spacing: 4px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.hero-content h1 {
+  font-size: 65px;
+  line-height: 1.05;
+  margin: 18px 0;
+}
+
+.hero-content h1 span {
+  color: #a7e6c9;
+}
+
+.hero-content p {
+  font-size: 19px;
+  line-height: 1.7;
+}
+
+.hero-button,
+.book-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #15956d;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.hero-button:hover,
+.book-button:hover {
+  background: #0d7454;
+  transform: translateY(-2px);
+}
+
+/* ABOUT */
+
+.about-section {
+  padding: 70px 8%;
+  text-align: center;
+}
+
+.about-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.about-section > p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.7;
+  color: #65736d;
+}
+
+.feature-container {
+  margin-top: 45px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.feature-card {
+  background: white;
+  padding: 35px 25px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+.feature-icon {
+  font-size: 42px;
+}
+
+.feature-card h3 {
+  color: #176b52;
+}
+
+/* PAGE HEADINGS */
+
+.page-heading,
+.booking-header {
+  text-align: center;
+  padding: 60px 20px 35px;
+}
+
+.page-heading p,
+.booking-header p {
+  color: #15956d;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: bold;
+}
+
+.page-heading h1,
+.booking-header h1 {
+  font-size: 42px;
+  margin: 10px 0;
+}
+
+.page-heading span,
+.booking-header span {
+  color: #718078;
+}
+
+/* RESORTS */
+
+.resorts-page {
+  padding-bottom: 70px;
+}
+
+.resort-grid {
+  width: 84%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.resort-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 28px rgba(0, 0, 0, 0.09);
+  transition: 0.3s;
+}
+
+.resort-card:hover {
+  transform: translateY(-7px);
+}
+
+.resort-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.resort-card-content {
+  padding: 25px;
+}
+
+.resort-card-content h2 {
+  margin-top: 0;
+  color: #176b52;
+}
+
+.resort-card-content p {
+  line-height: 1.6;
+  color: #69756f;
+}
+
+.resort-location {
+  color: #15956d !important;
+  font-weight: bold;
+}
+
+/* BOOKING */
+
+.booking-page {
+  min-height: 90vh;
+  padding-bottom: 70px;
+}
+
+.booking-container {
+  width: 80%;
+  max-width: 1050px;
+  margin: 20px auto;
+
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 35px;
+}
+
+.booking-form,
+.booking-details {
+  background: white;
+  padding: 35px;
+  border-radius: 22px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08);
+}
+
+.booking-form {
+  display: grid;
+  gap: 10px;
+}
+
+.booking-form label {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #315247;
+}
+
+.booking-form input,
+.booking-form select {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1px solid #d7e0db;
+  border-radius: 10px;
+  font-size: 15px;
+  background: #fbfdfc;
+  color: #24332d;
+  outline: none;
+}
+
+.booking-form input:focus,
+.booking-form select:focus {
+  border-color: #15956d;
+  box-shadow: 0 0 0 3px rgba(21, 149, 109, 0.12);
+}
+
+.booking-form button {
+  margin-top: 20px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: #15956d;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.booking-form button:hover {
+  background: #0d7454;
+  transform: translateY(-2px);
+}
+
+.booking-details {
+  background: linear-gradient(145deg, #176b52, #0c4636);
+  color: white;
+}
+
+.booking-details h2 {
+  margin-top: 0;
+  font-size: 27px;
+}
+
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.detail-item span {
+  opacity: 0.75;
+}
+
+.detail-item strong {
+  text-align: right;
+}
+
+/* HISTORY */
+
+.history-page {
+  min-height: 80vh;
+  padding-bottom: 70px;
+}
+
+.history-grid {
+  width: 80%;
+  margin: 20px auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 25px;
+}
+
+.history-card {
+  background: white;
+  padding: 28px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #15956d;
+}
+
+.history-card h2 {
+  color: #176b52;
+  margin-top: 0;
+}
+
+.history-card p {
+  color: #596760;
+  line-height: 1.6;
+}
+
+.no-bookings {
+  width: 70%;
+  margin: 40px auto;
+  background: white;
+  padding: 50px;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.07);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 850px) {
+
+  .navbar {
+    padding: 0 4%;
+  }
+
+  .nav-links {
+    gap: 12px;
+  }
+
+  .nav-links a {
+    font-size: 13px;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+  }
+
+  .feature-container,
+  .resort-grid,
+  .booking-container,
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .booking-container,
+  .history-grid,
+  .resort-grid {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+
+  .navbar {
+    height: auto;
+    padding: 18px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .hero-section {
+    min-height: 500px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .page-heading h1,
+  .booking-header h1 {
+    font-size: 32px;
+  }
+}
